@@ -1,0 +1,98 @@
+.hero {
+  padding: 3rem 0;
+  background-image: url("../../images/Web-Header-Background.svg");
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 2rem 0;
+  }
+}
+
+.heroMaxWidth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+  padding: var(--padding-desktop);
+}
+
+@media (max-width: 768px) {
+  .heroMaxWidth {
+    padding: 0 var(--padding-mobile);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.heroText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-right: 2rem;
+  max-width: 50%;
+}
+
+@media (max-width: 768px) {
+  .heroText {
+    padding-right: 0;
+    margin-bottom: 3rem;
+    max-width: 100%;
+  }
+}
+
+.heroTitle {
+  font-size: var(--font-size-xl);
+}
+
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: var(--font-size-xxl);
+  }
+}
+
+.heroButton {
+  color: var(--color-inverted);
+  background-color: var(--color-primary);
+  border: none;
+  padding: 1.5rem 2.5rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  -webkit-box-shadow: 0.75rem 0.25rem 0.85rem 0.25rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0.75rem 0.25rem 0.85rem 0.25rem rgba(0, 0, 0, 0.15);
+}
+
+.heroButton:hover {
+  -webkit-filter: brightness(0.99);
+          filter: brightness(0.99);
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+}
+
+.heroImage {
+  max-width: 50%;
+  min-width: 17.5rem;
+  width: auto;
+}
+/*# sourceMappingURL=Hero.module.css.map */

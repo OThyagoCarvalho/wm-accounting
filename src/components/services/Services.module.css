@@ -1,0 +1,14 @@
+.services {
+  background-color: var(--color-inverted);
+  color: var(--color-primary);
+}
+
+.servicesMaxWidth {
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+  padding: var(--padding-desktop);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=Services.module.css.map */

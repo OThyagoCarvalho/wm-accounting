@@ -1,0 +1,60 @@
+.header {
+  height: 5rem;
+  width: 100%;
+  color: var(--color-inverted);
+  background-color: var(--color-primary);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.headerMaxWidth {
+  max-width: var(--max-content-width);
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 var(--padding-desktop);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .headerMaxWidth {
+    padding: 0 var(--padding-mobile);
+  }
+}
+
+.headerLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  font-size: var(--font-size-base);
+}
+
+@media (max-width: 768px) {
+  .headerLinks {
+    display: none;
+  }
+}
+
+.headerLinks > li:hover {
+  color: var(--accent);
+  -webkit-filter: brightness(0.75);
+          filter: brightness(0.75);
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+/*# sourceMappingURL=Header.module.css.map */

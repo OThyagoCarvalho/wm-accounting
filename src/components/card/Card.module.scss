@@ -1,0 +1,43 @@
+.card {
+  background-color: var(--color-primary);
+  color: var(--color-inverted);
+  border-radius: var(--border-radius-desktop);
+  box-shadow: var(--box-shadow-desktop);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  
+  overflow: hidden;
+  position: relative;
+  max-width: 350px;
+  width: 28.25vw; 
+  height: 22.5rem;
+  padding: 2rem 1rem;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    max-width: 100vw;   
+    height: 17.5rem; 
+  }
+}
+
+
+.cardTitle {
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 0;
+  padding: 1rem 0;
+  color: var(--dark-accent);
+}
+
+.cardText {
+  font-size: var(--font-size-base);
+  line-height: 1.75;
+  padding: 1rem 0;
+  color: var(--color-grayed);  
+}
+
+.cardLink {
+  font-weight: 600;
+  font-size: var(--font-size-base);
+}

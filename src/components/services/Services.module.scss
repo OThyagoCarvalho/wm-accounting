@@ -1,0 +1,40 @@
+.services {
+  background-color: var(--color-inverted);
+  color: var(--color-primary);
+  padding: var(--padding-desktop) 0;
+
+  @media (max-width: 768px) {
+    padding: 2rem 0;
+  }
+}
+
+.servicesMaxWidth {
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+  padding: 0 var(--padding-desktop);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    padding: 0 var(--padding-mobile);
+    flex-direction: column;
+    
+  }
+}
+
+.card {
+  @media (max-width: 768px) {   
+    width: 100%;
+  }
+}
+
+.card + .card {
+  margin-left: 1.5rem;
+
+  @media (max-width: 768px) {
+    margin-left: 0;
+    margin-top: 2.5rem;
+  }
+}
